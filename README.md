@@ -16,7 +16,7 @@ The usage example:
       }
     });
 
-    var Focus = Car.extend({
+    var Focus = Ford.extend({
       name: function() {
         return this.super();
       }
