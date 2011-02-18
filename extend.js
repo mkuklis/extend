@@ -20,10 +20,10 @@
             && typeof props[name] == "function") {
             this[name] = function(name, fn) {
               return function() {
-                var tmp = this.super;
-                this.super = fn;
+                var tmp = this._super;
+                this._super = fn;
                 var result =  props[name].apply(this, arguments);
-                this.super = tmp;
+                this._super = tmp;
                 return result; 
               }
             }(name, proto[name]);  
