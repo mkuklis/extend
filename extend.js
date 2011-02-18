@@ -9,15 +9,15 @@
   var init = false;
   Function.prototype.extend = function(props) {
     init = true;
-    var proto = new this;
+    var proto = new this();
     function Class() {
       if (init) { // initialize
         // restore constructor
         this.constructor = Class;
         
         for (var name in props) {
-          if (typeof proto[name] == "function" 
-            && typeof props[name] == "function") {
+          if (typeof proto[name] == "function" && 
+            typeof props[name] == "function") {
             this[name] = function(name, fn) {
               return function() {
                 var tmp = this._super;
