@@ -1,5 +1,5 @@
 #About
-**extend** an attempt to create a simple JavaScript inheritance. Inspired by [http://ejohn.org/blog/simple-javascript-inheritance](http://ejohn.org/blog/simple-javascript-inheritance)
+**extend** an attempt to create a JavaScript inheritance. Inspired by [http://ejohn.org/blog/simple-javascript-inheritance](http://ejohn.org/blog/simple-javascript-inheritance)
 
 
 The usage example:
