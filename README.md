@@ -12,13 +12,13 @@ The usage example:
 
     var Ford = Car.extend({
       name: function() {
-        return this.super();
+        return this._super();
       }
     });
 
     var Focus = Ford.extend({
       name: function() {
-        return this.super();
+        return this._super();
       }
     });
 
