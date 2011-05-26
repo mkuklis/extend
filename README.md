@@ -3,7 +3,9 @@
 
 
 The usage example:
+
     function Car() {};
+    
     Car.prototype = {
       name: function() {
         return "car";
